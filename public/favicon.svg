@@ -3,14 +3,14 @@
   <rect width="512" height="512" fill="transparent"/>
   
   <!-- Main text group, centered in viewport -->
-  <g transform="translate(128, 256)">
+  <g transform="translate(50, 290)">
     <!-- v in pink -->
-    <text x="0" y="0" font-family="Arial, sans-serif" font-weight="900" font-size="140" fill="#E91E63" style="text-transform: lowercase">v</text>
+    <text x="0" y="0" font-family="Arial, sans-serif" font-weight="900" font-size="240" fill="#E91E63" style="text-transform: lowercase">v</text>
     
     <!-- sql in white -->
-    <text x="70" y="0" font-family="Arial, sans-serif" font-weight="900" font-size="140" fill="white" style="text-transform: lowercase">sql</text>
+    <text x="120" y="0" font-family="Arial, sans-serif" font-weight="900" font-size="240" fill="white" style="text-transform: lowercase">sql</text>
     
     <!-- Period at the end -->
-    <text x="240" y="0" font-family="Arial, sans-serif" font-weight="900" font-size="140" fill="white">.</text>
+    <text x="415" y="0" font-family="Arial, sans-serif" font-weight="900" font-size="240" fill="white">.</text>
   </g>
 </svg> 
