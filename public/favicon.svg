@@ -3,7 +3,7 @@
   <rect width="512" height="512" fill="transparent"/>
   
   <!-- Main text group, centered -->
-  <g transform="translate(96, 216) scale(1.2)">
+  <g transform="translate(96, 256) scale(1.2)">
     <!-- v in pink -->
     <text x="0" y="0" font-family="Arial, sans-serif" font-weight="900" font-size="160" fill="#E91E63">v</text>
     
