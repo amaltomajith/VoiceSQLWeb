@@ -1,16 +1,16 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512">
-  <!-- Background is now transparent -->
+  <!-- Background is transparent -->
   <rect width="512" height="512" fill="transparent"/>
   
-  <!-- Main text group, centered -->
-  <g transform="translate(96, 256) scale(1.2)">
+  <!-- Main text group, centered in viewport -->
+  <g transform="translate(128, 256)">
     <!-- v in pink -->
-    <text x="0" y="0" font-family="Arial, sans-serif" font-weight="900" font-size="160" fill="#E91E63">v</text>
+    <text x="0" y="0" font-family="Arial, sans-serif" font-weight="900" font-size="140" fill="#E91E63" style="text-transform: lowercase">v</text>
     
     <!-- sql in white -->
-    <text x="80" y="0" font-family="Arial, sans-serif" font-weight="900" font-size="160" fill="white">sql</text>
+    <text x="70" y="0" font-family="Arial, sans-serif" font-weight="900" font-size="140" fill="white" style="text-transform: lowercase">sql</text>
     
     <!-- Period at the end -->
-    <text x="270" y="0" font-family="Arial, sans-serif" font-weight="900" font-size="160" fill="white">.</text>
+    <text x="240" y="0" font-family="Arial, sans-serif" font-weight="900" font-size="140" fill="white">.</text>
   </g>
 </svg> 
