@@ -19,41 +19,43 @@ export default async function ForgotPassword(props: {
   }
 
   return (
-    <div className="auth-container">
-      <div className="auth-box">
-        <UrlProvider>
-          <form className="flex flex-col">
-            <h1 className="auth-title">Reset Password</h1>
+    <>
+      <div className="auth-container">
+        <div className="auth-box">
+          <UrlProvider>
+            <form className="flex flex-col">
+              <h1 className="auth-title">Reset Password</h1>
 
-            <input
-              type="email"
-              name="email"
-              placeholder="Email"
-              required
-              className="auth-input"
-            />
+              <input
+                type="email"
+                name="email"
+                placeholder="Email"
+                required
+                className="auth-input"
+              />
 
-            <SubmitButton
-              formAction={forgotPasswordAction}
-              pendingText="Sending reset link..."
-              className="auth-button"
-            >
-              Reset Password
-            </SubmitButton>
+              <SubmitButton
+                formAction={forgotPasswordAction}
+                pendingText="Sending reset link..."
+                className="auth-button"
+              >
+                Reset Password
+              </SubmitButton>
 
-            <div className="auth-separator">
-              <span>Remember your password?</span>
-            </div>
+              <div className="auth-separator">
+                <span>Remember your password?</span>
+              </div>
 
-            <Link href="/sign-in" className="auth-link text-center">
-              Back to Sign in
-            </Link>
+              <Link href="/sign-in" className="auth-link text-center">
+                Back to Sign in
+              </Link>
 
-            <FormMessage message={searchParams} />
-          </form>
-        </UrlProvider>
+              <FormMessage message={searchParams} />
+            </form>
+          </UrlProvider>
+        </div>
       </div>
       <SmtpMessage />
-    </div>
+    </>
   );
 }

@@ -17,56 +17,58 @@ export default async function Signup(props: {
   }
 
   return (
-    <div className="auth-container">
-      <div className="auth-box">
-        <form className="flex flex-col">
-          <h1 className="auth-title">Create Account</h1>
+    <>
+      <div className="auth-container">
+        <div className="auth-box">
+          <form className="flex flex-col">
+            <h1 className="auth-title">Create Account</h1>
 
-          <input
-            type="text"
-            name="full_name"
-            placeholder="Full Name"
-            required
-            className="auth-input"
-          />
+            <input
+              type="text"
+              name="full_name"
+              placeholder="Full Name"
+              required
+              className="auth-input"
+            />
 
-          <input
-            type="email"
-            name="email"
-            placeholder="Email"
-            required
-            className="auth-input"
-          />
+            <input
+              type="email"
+              name="email"
+              placeholder="Email"
+              required
+              className="auth-input"
+            />
 
-          <input
-            type="password"
-            name="password"
-            placeholder="Password"
-            minLength={6}
-            required
-            className="auth-input"
-          />
+            <input
+              type="password"
+              name="password"
+              placeholder="Password"
+              minLength={6}
+              required
+              className="auth-input"
+            />
 
-          <SubmitButton
-            formAction={signUpAction}
-            pendingText="Creating your account..."
-            className="auth-button"
-          >
-            Sign up
-          </SubmitButton>
+            <SubmitButton
+              formAction={signUpAction}
+              pendingText="Creating your account..."
+              className="auth-button"
+            >
+              Sign up
+            </SubmitButton>
 
-          <div className="auth-separator">
-            <span>Already have an account?</span>
-          </div>
+            <div className="auth-separator">
+              <span>Already have an account?</span>
+            </div>
 
-          <Link href="/sign-in" className="auth-link text-center">
-            Sign in
-          </Link>
+            <Link href="/sign-in" className="auth-link text-center">
+              Sign in
+            </Link>
 
-          <FormMessage message={searchParams} />
-        </form>
+            <FormMessage message={searchParams} />
+          </form>
+        </div>
       </div>
       <SmtpMessage />
-    </div>
+    </>
   );
 }
