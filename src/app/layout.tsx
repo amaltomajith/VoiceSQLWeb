@@ -15,6 +15,14 @@ export const metadata: Metadata = {
       {
         url: '/favicon.svg',
         type: 'image/svg+xml',
+        sizes: 'any'
+      }
+    ],
+    apple: [
+      {
+        url: '/favicon.svg',
+        type: 'image/svg+xml',
+        sizes: 'any'
       }
     ],
     shortcut: '/favicon.svg',
@@ -28,6 +36,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
+      <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
       <Script src="https://api.tempo.new/proxy-asset?url=https://storage.googleapis.com/tempo-public-assets/error-handling.js" />
       <body className={inter.className}>
         <Providers>{children}</Providers>
