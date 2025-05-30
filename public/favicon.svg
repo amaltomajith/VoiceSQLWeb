@@ -1,25 +1,16 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512">
-  <!-- Black background -->
-  <rect width="512" height="512" fill="black"/>
+  <!-- Background is now transparent -->
+  <rect width="512" height="512" fill="transparent"/>
   
-  <!-- Voice part -->
-  <g transform="translate(60, 120) scale(1.2)">
-    <!-- Letter V with the voice wave effect -->
-    <path d="M30 50 L150 280 L270 50" stroke="white" stroke-width="40" fill="none" stroke-linecap="round"/>
+  <!-- Main text group, centered -->
+  <g transform="translate(96, 216) scale(1.2)">
+    <!-- v in pink -->
+    <text x="0" y="0" font-family="Arial, sans-serif" font-weight="900" font-size="160" fill="#E91E63">v</text>
     
-    <!-- Voice waves -->
-    <path d="M150 100 Q 180 100, 180 150 T 150 200" 
-          stroke="white" stroke-width="12" fill="none" opacity="0.6"/>
-    <path d="M120 80 Q 150 80, 150 150 T 120 220" 
-          stroke="white" stroke-width="12" fill="none" opacity="0.4"/>
-    <path d="M90 60 Q 120 60, 120 150 T 90 240" 
-          stroke="white" stroke-width="12" fill="none" opacity="0.2"/>
-  </g>
-  
-  <!-- SQL part -->
-  <g transform="translate(280, 200)">
-    <text font-family="Arial, sans-serif" font-weight="900" font-size="180" fill="#E91E63">
-      SQL
-    </text>
+    <!-- sql in white -->
+    <text x="80" y="0" font-family="Arial, sans-serif" font-weight="900" font-size="160" fill="white">sql</text>
+    
+    <!-- Period at the end -->
+    <text x="270" y="0" font-family="Arial, sans-serif" font-weight="900" font-size="160" fill="white">.</text>
   </g>
 </svg> 
