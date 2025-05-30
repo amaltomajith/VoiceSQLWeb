@@ -39,9 +39,18 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+tsconfig.tsbuildinfo
+
+# IDE and editor files
+.idea/
+.vscode/
+*.swp
+*.swo
+*.swn
+.DS_Store
+Thumbs.db
 
 # Tempo
-
 node_modules/
 **/tempobook/dynamic/
 **/tempobook/storyboards/
@@ -50,3 +59,13 @@ node_modules/
 .git
 
 .github/
+
+# Package manager files
+package-lock.json
+yarn.lock
+.npmrc
+
+# Cache directories
+.cache/
+.next/
+dist/
