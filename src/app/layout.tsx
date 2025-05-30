@@ -10,6 +10,15 @@ const inter = Inter({ subsets: ["latin"] });
 export const metadata: Metadata = {
   title: "VoiceSQL - AI SQL Assistant",
   description: "Convert voice to SQL effortlessly.",
+  icons: {
+    icon: [
+      {
+        url: '/favicon.svg',
+        type: 'image/svg+xml',
+      }
+    ],
+    shortcut: '/favicon.svg',
+  },
 };
 
 export default function RootLayout({
