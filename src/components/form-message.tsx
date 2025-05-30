@@ -1,3 +1,5 @@
+import * as React from "react";
+
 export type Message =
   | { success: string }
   | { error: string }
@@ -5,19 +7,21 @@ export type Message =
 
 export function FormMessage({ message }: { message: Message }) {
   return (
-    <div className="flex flex-col gap-2 w-full max-w-md text-sm">
+    <div className="mt-4 w-full">
       {"success" in message && (
-        <div className="text-green-500 border-l-2 px-4">
+        <div className="flex items-center gap-2 rounded-md bg-green-500/10 px-4 py-2 text-sm text-green-500">
           {message.success}
         </div>
       )}
       {"error" in message && (
-        <div className="text-red-500 border-l-2 px-4">
+        <div className="flex items-center gap-2 rounded-md bg-primary/10 px-4 py-2 text-sm text-primary">
           {message.error}
         </div>
       )}
       {"message" in message && (
-        <div className="text-foreground border-l-2 px-4">{message.message}</div>
+        <div className="flex items-center gap-2 rounded-md bg-surface/50 px-4 py-2 text-sm text-text">
+          {message.message}
+        </div>
       )}
     </div>
   );
