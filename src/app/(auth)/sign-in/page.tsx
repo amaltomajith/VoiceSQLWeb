@@ -22,17 +22,19 @@ export default async function SignInPage({ searchParams }: LoginProps) {
   }
 
   return (
-    <>
+    <div className="min-h-screen bg-gradient-to-br from-background to-background/95">
       <Navbar />
-      <div className="flex min-h-screen flex-col items-center justify-center bg-background px-4 py-8">
-        <div className="w-full max-w-md rounded-lg border border-border bg-card p-6 shadow-sm">
+      <div className="flex min-h-[calc(100vh-4rem)] flex-col items-center justify-center px-4 py-8">
+        <div className="w-full max-w-md transform rounded-xl border border-border/50 bg-card p-8 shadow-lg backdrop-blur-sm transition-all">
           <form className="flex flex-col space-y-6">
             <div className="space-y-2 text-center">
-              <h1 className="text-3xl font-semibold tracking-tight">Sign in</h1>
+              <h1 className="text-4xl font-bold tracking-tight bg-gradient-to-r from-primary to-primary/80 bg-clip-text text-transparent">
+                Welcome Back
+              </h1>
               <p className="text-sm text-muted-foreground">
                 Don't have an account?{" "}
                 <Link
-                  className="text-primary font-medium hover:underline transition-all"
+                  className="text-primary font-medium hover:text-primary/80 hover:underline transition-all duration-200"
                   href="/sign-up"
                 >
                   Sign up
@@ -40,7 +42,7 @@ export default async function SignInPage({ searchParams }: LoginProps) {
               </p>
             </div>
 
-            <div className="space-y-4">
+            <div className="space-y-5">
               <div className="space-y-2">
                 <Label htmlFor="email" className="text-sm font-medium">
                   Email
@@ -51,7 +53,7 @@ export default async function SignInPage({ searchParams }: LoginProps) {
                   type="email"
                   placeholder="you@example.com"
                   required
-                  className="w-full"
+                  className="w-full h-11 rounded-lg border-border/50 bg-background/50 backdrop-blur-sm focus:border-primary/50 focus:ring-primary/50 transition-all duration-200"
                 />
               </div>
 
@@ -61,7 +63,7 @@ export default async function SignInPage({ searchParams }: LoginProps) {
                     Password
                   </Label>
                   <Link
-                    className="text-xs text-muted-foreground hover:text-foreground hover:underline transition-all"
+                    className="text-xs text-muted-foreground hover:text-primary hover:underline transition-all duration-200"
                     href="/forgot-password"
                   >
                     Forgot Password?
@@ -73,13 +75,13 @@ export default async function SignInPage({ searchParams }: LoginProps) {
                   name="password"
                   placeholder="Your password"
                   required
-                  className="w-full"
+                  className="w-full h-11 rounded-lg border-border/50 bg-background/50 backdrop-blur-sm focus:border-primary/50 focus:ring-primary/50 transition-all duration-200"
                 />
               </div>
             </div>
 
             <SubmitButton
-              className="w-full"
+              className="w-full h-11 rounded-lg bg-primary hover:bg-primary/90 text-primary-foreground font-medium transition-all duration-200 transform hover:scale-[1.02]"
               pendingText="Signing in..."
               formAction={signInAction}
             >
@@ -90,6 +92,6 @@ export default async function SignInPage({ searchParams }: LoginProps) {
           </form>
         </div>
       </div>
-    </>
+    </div>
   );
 }
