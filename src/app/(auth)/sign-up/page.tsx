@@ -1,7 +1,6 @@
 import { FormMessage, Message } from "@/components/form-message";
 import { SubmitButton } from "@/components/submit-button";
 import Link from "next/link";
-import { SmtpMessage } from "../smtp-message";
 import { signUpAction } from "@/app/actions";
 
 export default async function Signup(props: {
@@ -68,7 +67,6 @@ export default async function Signup(props: {
           </form>
         </div>
       </div>
-      <SmtpMessage />
     </>
   );
 }

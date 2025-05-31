@@ -1,7 +1,6 @@
 import { FormMessage, Message } from "@/components/form-message";
 import { SubmitButton } from "@/components/submit-button";
 import Link from "next/link";
-import { SmtpMessage } from "../smtp-message";
 import { forgotPasswordAction } from "@/app/actions";
 import { UrlProvider } from "@/components/url-provider";
 
@@ -55,7 +54,6 @@ export default async function ForgotPassword(props: {
           </UrlProvider>
         </div>
       </div>
-      <SmtpMessage />
     </>
   );
 }
